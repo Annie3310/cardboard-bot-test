@@ -1,0 +1,7 @@
+
+.step-nav { grid-template-columns: repeat(11, minmax(0, 1fr)); }
+.materials-page { padding: 10px; }
+.materials-frame { display: block; width: 100%; min-height: 300px; border: 0; border-radius: 16px; background: #f5f6f3; }
+.materials-footer { display: flex; justify-content: flex-end; padding: 18px 14px 10px; }
+.materials-footer .primary-action { width: auto; }
+@media(max-width:760px){.step-nav{grid-template-columns:repeat(3,minmax(0,1fr))}.materials-page{padding:5px}.materials-footer{padding:16px 8px 10px}.materials-footer .primary-action{width:100%}}

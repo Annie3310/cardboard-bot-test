@@ -1,0 +1,217 @@
+{
+  "version": "0.11",
+  "chipFamily": "ESP32-C3",
+  "writeMode": "separate-regions",
+  "steps": [
+    {
+      "id": "display",
+      "environment": "test_display",
+      "manifest": "manifest-display.json",
+      "nvsUntouched": [
+        36864,
+        57344
+      ],
+      "parts": [
+        {
+          "path": "firmware/teaching/01-display/bootloader.bin",
+          "offset": 0,
+          "bytes": 13248,
+          "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
+        },
+        {
+          "path": "firmware/teaching/01-display/partitions.bin",
+          "offset": 32768,
+          "bytes": 3072,
+          "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1"
+        },
+        {
+          "path": "firmware/teaching/01-display/boot_app0.bin",
+          "offset": 57344,
+          "bytes": 8192,
+          "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+        },
+        {
+          "path": "firmware/teaching/01-display/firmware.bin",
+          "offset": 65536,
+          "bytes": 287888,
+          "sha256": "adfb6f6aadb4a6f9236dfbb6270e1f6fa0ef7086b938f53c33567a4fa99cdd21"
+        }
+      ]
+    },
+    {
+      "id": "infrared",
+      "environment": "test_infrared",
+      "manifest": "manifest-infrared.json",
+      "nvsUntouched": [
+        36864,
+        57344
+      ],
+      "parts": [
+        {
+          "path": "firmware/teaching/02-infrared/bootloader.bin",
+          "offset": 0,
+          "bytes": 13248,
+          "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
+        },
+        {
+          "path": "firmware/teaching/02-infrared/partitions.bin",
+          "offset": 32768,
+          "bytes": 3072,
+          "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1"
+        },
+        {
+          "path": "firmware/teaching/02-infrared/boot_app0.bin",
+          "offset": 57344,
+          "bytes": 8192,
+          "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+        },
+        {
+          "path": "firmware/teaching/02-infrared/firmware.bin",
+          "offset": 65536,
+          "bytes": 288064,
+          "sha256": "e188c6814cc91b18b393bfac9fc58aa6c6470263da7a416ddf2a95d952665766"
+        }
+      ]
+    },
+    {
+      "id": "servo_pan",
+      "environment": "test_servo_pan",
+      "manifest": "manifest-servo-pan.json",
+      "nvsUntouched": [
+        36864,
+        57344
+      ],
+      "parts": [
+        {
+          "path": "firmware/teaching/03-servo-pan/bootloader.bin",
+          "offset": 0,
+          "bytes": 13248,
+          "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
+        },
+        {
+          "path": "firmware/teaching/03-servo-pan/partitions.bin",
+          "offset": 32768,
+          "bytes": 3072,
+          "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1"
+        },
+        {
+          "path": "firmware/teaching/03-servo-pan/boot_app0.bin",
+          "offset": 57344,
+          "bytes": 8192,
+          "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+        },
+        {
+          "path": "firmware/teaching/03-servo-pan/firmware.bin",
+          "offset": 65536,
+          "bytes": 295424,
+          "sha256": "6df58579514d7c0c0316beeb7f6d559036abe3c5352ef8d9ed3d550ebf997fef"
+        }
+      ]
+    },
+    {
+      "id": "servo_tilt",
+      "environment": "test_servo_tilt",
+      "manifest": "manifest-servo-tilt.json",
+      "nvsUntouched": [
+        36864,
+        57344
+      ],
+      "parts": [
+        {
+          "path": "firmware/teaching/04-servo-tilt/bootloader.bin",
+          "offset": 0,
+          "bytes": 13248,
+          "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
+        },
+        {
+          "path": "firmware/teaching/04-servo-tilt/partitions.bin",
+          "offset": 32768,
+          "bytes": 3072,
+          "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1"
+        },
+        {
+          "path": "firmware/teaching/04-servo-tilt/boot_app0.bin",
+          "offset": 57344,
+          "bytes": 8192,
+          "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+        },
+        {
+          "path": "firmware/teaching/04-servo-tilt/firmware.bin",
+          "offset": 65536,
+          "bytes": 295424,
+          "sha256": "fea9b111aacd35574512319388af85ccb5cee75c2efa0d600c5edadaf2b500de"
+        }
+      ]
+    },
+    {
+      "id": "touch",
+      "environment": "test_touch",
+      "manifest": "manifest-touch.json",
+      "nvsUntouched": [
+        36864,
+        57344
+      ],
+      "parts": [
+        {
+          "path": "firmware/teaching/05-touch/bootloader.bin",
+          "offset": 0,
+          "bytes": 13248,
+          "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
+        },
+        {
+          "path": "firmware/teaching/05-touch/partitions.bin",
+          "offset": 32768,
+          "bytes": 3072,
+          "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1"
+        },
+        {
+          "path": "firmware/teaching/05-touch/boot_app0.bin",
+          "offset": 57344,
+          "bytes": 8192,
+          "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+        },
+        {
+          "path": "firmware/teaching/05-touch/firmware.bin",
+          "offset": 65536,
+          "bytes": 289040,
+          "sha256": "2d0374ba1536987e8840d1f29d573643b109cf709ac8782c40898d27a13d864e"
+        }
+      ]
+    },
+    {
+      "id": "robot",
+      "environment": "robot",
+      "manifest": "manifest.json",
+      "nvsUntouched": [
+        36864,
+        57344
+      ],
+      "parts": [
+        {
+          "path": "firmware/teaching/06-robot/bootloader.bin",
+          "offset": 0,
+          "bytes": 13248,
+          "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
+        },
+        {
+          "path": "firmware/teaching/06-robot/partitions.bin",
+          "offset": 32768,
+          "bytes": 3072,
+          "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1"
+        },
+        {
+          "path": "firmware/teaching/06-robot/boot_app0.bin",
+          "offset": 57344,
+          "bytes": 8192,
+          "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+        },
+        {
+          "path": "firmware/teaching/06-robot/firmware.bin",
+          "offset": 65536,
+          "bytes": 315136,
+          "sha256": "2bf3960b2b56c7c31dcf005e7abf6db94bf8defc61217e37c68dbeaff2ce8de2"
+        }
+      ]
+    }
+  ]
+}

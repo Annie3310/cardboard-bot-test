@@ -1,0 +1,43 @@
+
+.step-nav { grid-template-columns: repeat(9, minmax(0, 1fr)); }
+.brand-mark { border-radius: 50%; object-fit: cover; }
+.cut-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(230px, .85fr); gap: 36px; align-items: start; }
+.cut-eyebrow { color: #39745a; font-size: .78rem; font-weight: 750; margin-bottom: 10px; }
+.cut-copy h2 { font-size: clamp(1.55rem, 3vw, 2rem); }
+.cut-description { margin-top: 14px; color: #55635b; line-height: 1.8; }
+.cut-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
+.cut-actions .secondary-action { width: auto; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; padding: 12px 20px; }
+.cut-settings { padding: 18px 20px; background: #edf4ec; border-radius: 14px; color: #405349; font-size: .88rem; line-height: 1.8; }
+.cut-settings ul { padding-left: 20px; margin: 8px 0 12px; }
+.cut-settings p { font-size: .82rem; }
+.cut-status { margin: 16px 0; color: #66716d; font-size: .8rem; line-height: 1.7; }
+.cut-preview { margin: 0; padding: 12px; background: #e9e6df; border-radius: 12px; text-align: center; }
+.cut-preview img { display: block; width: 100%; max-height: 510px; object-fit: contain; }
+.cut-preview figcaption { color: #66716d; font-size: .75rem; padding-top: 10px; }
+.cut-print-sheet { display: none; }
+@media (max-width: 760px) {
+  .step-nav { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .cut-layout { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+}
+@page { size: A4 portrait; margin: 0; }
+@media print {
+  html, body { margin: 0 !important; padding: 0 !important; width: 210mm !important; min-width: 0 !important; background: white !important; }
+  body > :not(.cut-print-sheet) { display: none !important; }
+  .cut-print-sheet { display: block !important; width: 210mm; height: 297mm; margin: 0; padding: 0; break-inside: avoid; }
+  .cut-print-sheet img { display: block; width: 100%; height: 100%; object-fit: contain; }
+}
+
+.cut-preview { position: relative; padding-top: 48px; }
+.cut-zoom-trigger { display: block; width: 100%; border: 0; padding: 0; background: transparent; cursor: zoom-in; }
+.cut-download-icon, .cut-lightbox-close { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 8px; border: 1px solid #d5ded6; border-radius: 9px; background: #fff; color: #254e3e; cursor: pointer; text-decoration: none; }
+.cut-download-icon:hover, .cut-lightbox-close:hover { background: #edf4ec; }
+.cut-download-icon svg, .cut-lightbox-close svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.cut-preview > .cut-download-icon { position: absolute; right: 10px; top: 7px; }
+.cut-lightbox { width: min(960px, 94vw); height: min(94vh, 1200px); max-width: none; max-height: none; padding: 0; border: 0; border-radius: 14px; color: #1d2a27; background: #e9e6df; box-shadow: 0 20px 80px #0005; }
+.cut-lightbox[open] { display: grid; grid-template-rows: auto minmax(0, 1fr); }
+.cut-lightbox::backdrop { background: #12241eb8; }
+.cut-lightbox-header { display: flex; align-items: center; justify-content: space-between; padding: 10px 16px; background: #fff; border-bottom: 1px solid #d5ded6; }
+.cut-lightbox-header > div { display: flex; gap: 8px; }
+.cut-lightbox-scroll { overflow: auto; padding: 16px; }
+.cut-lightbox-scroll img { display: block; width: 100%; height: auto; background: #fff; }
+@media (max-width: 760px) { .cut-lightbox-header { padding: 8px 12px; } .cut-lightbox-scroll { padding: 8px; } }
